@@ -70,7 +70,7 @@
         Note:
         - components should work the same way every time and all should work
         in a similar manner
-        - respect other's time and energy by reducing friction for using
+        - respect other's time and energy by **reducing friction** for using
         your components
         - take a look at your component from the point of view of your client
         is it easy to use? Intuitive?
@@ -135,7 +135,7 @@
         - Map Services
         - Query
         - GP Tasks
-        - SOE's
+        - SOE's/SOI's
         - Beware of keeping your services directory public!
         [ArcGIS Rest API Docs](http://mapserv.utah.gov/arcgis/sdk/rest/index.html#/Query_Map_Service_Layer/02ss0000000r000000/)
 
@@ -203,7 +203,7 @@
         ## layer-selector
         [agrc-widgets/layer-selector](https://github.com/agrc-widgets/layer-selector)
         ```javascript
-        var layerSelector = new Module({
+        var layerSelector = new LayerSelector({
             map: map,
             quadWord: '<your google imagery quad word>',
             baseLayers: ['Hybrid', {token: 'Lite', selected: true}, 'Terrain'],
@@ -246,9 +246,9 @@
 
         pass configuration options via URL
 
-        [parcels](http://mapserv.utah.gov/parcels)
+        [mapserv.utah.gov/parcels](http://mapserv.utah.gov/parcels)
 
-        http://mapserv.utah.gov/parcels/#/Beaver
+        [mapserv.utah.gov/parcels/#/Beaver](http://mapserv.utah.gov/parcels/#/Beaver)
     </script>
 </section>
 
