@@ -52,7 +52,6 @@
 </section>
 
 <section data-background='images/kids.jpg'>
-    [pic of kids]
 
     <aside class="notes">
         Story about learning to play nicely.
@@ -70,7 +69,7 @@
         Note:
         - components should work the same way every time and all should work
         in a similar manner
-        - respect other's time and energy by reducing friction for using
+        - respect other's time and energy by **reducing friction** for using
         your components
         - take a look at your component from the point of view of your client
         is it easy to use? Intuitive?
@@ -89,7 +88,7 @@
     </script>
 </section>
 
-<section data-markdown>
+<section data-markdown class='large-strong'>
     <script type='text/template'>
         > Does what I am working on right now have **anything** to do with GIS?
 
@@ -98,7 +97,7 @@
     </script>
 </section>
 
-<section data-markdown>
+<section data-markdown class='large-strong'>
     <script type='text/template'>
         >Leave the non-geospatial stuff to traditional programmers. They are likely
         **better at it** than you are.
@@ -135,7 +134,7 @@
         - Map Services
         - Query
         - GP Tasks
-        - SOE's
+        - SOE's/SOI's
         - Beware of keeping your services directory public!
         [ArcGIS Rest API Docs](http://mapserv.utah.gov/arcgis/sdk/rest/index.html#/Query_Map_Service_Layer/02ss0000000r000000/)
 
@@ -203,7 +202,7 @@
         ## layer-selector
         [agrc-widgets/layer-selector](https://github.com/agrc-widgets/layer-selector)
         ```javascript
-        var layerSelector = new Module({
+        var layerSelector = new LayerSelector({
             map: map,
             quadWord: '<your google imagery quad word>',
             baseLayers: ['Hybrid', {token: 'Lite', selected: true}, 'Terrain'],
@@ -246,16 +245,16 @@
 
         pass configuration options via URL
 
-        [parcels](http://mapserv.utah.gov/parcels)
+        [mapserv.utah.gov/parcels](http://mapserv.utah.gov/parcels)
 
-        http://mapserv.utah.gov/parcels/#/Beaver
+        [mapserv.utah.gov/parcels/#/Beaver](http://mapserv.utah.gov/parcels/#/Beaver)
     </script>
 </section>
 
 <section data-markdown>
     <script type='text/template'>
         ## Apps as widgets
-        [boilerplate](https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate/blob/master/src/index.html)
+        [AGRC JS Boilerplate](https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate/blob/master/src/index.html)
     </script>
 </section>
 
@@ -293,6 +292,14 @@
     </script>
 </section>
 
+<section data-markdown class='large-strong'>
+    <script type='text/template'>
+        > Does what I am working on right now have **anything** to do with GIS?
+
+        > Am I **excited** about what I'm working on right now?
+    </script>
+</section>
+
 <section data-markdown class='no-bullets'>
     <script type='text/template'>
         ## Thanks!
@@ -303,7 +310,6 @@
         - Slides: [stdavis.github.io/playing-nicely-with-others](http://stdavis.github.io/playing-nicely-with-others)
     </script>
 </section>
-
 
 <!-- END SLIDE SHOW -->
 
@@ -316,6 +322,7 @@
     Reveal.initialize({
         controls: false,
         history: true,
+        transition: 'fade',
 
         dependencies: [
             { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
